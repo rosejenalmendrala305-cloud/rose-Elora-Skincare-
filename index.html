@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ÉLORA SKIN — Beauty Begins With Your Ritual</title>
+  <meta name="description" content="ÉLORA SKIN: luxury skincare rituals crafted for radiant, lasting skin.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Page loader -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader__inner">
+      <span class="loader__brand">ÉLORA</span>
+      <span class="loader__line"></span>
+    </div>
+  </div>
+
+  <!-- Custom cursor (desktop only) -->
+  <div class="cursor" id="cursor" aria-hidden="true"><span></span></div>
+
+  <!-- Navigation -->
+  <header class="nav" id="nav">
+    <a href="#hero" class="nav__logo" data-cursor="link">ÉLORA <em>skin</em></a>
+    <nav class="nav__links" id="navLinks" aria-label="Main">
+      <a href="#about" data-cursor="link">Our Story</a>
+      <a href="#collection" data-cursor="link">Collection</a>
+      <a href="#ritual" data-cursor="link">The Ritual</a>
+      <a href="#reviews" data-cursor="link">Reviews</a>
+      <a href="#newsletter" data-cursor="link">Journal</a>
+    </nav>
+    <div class="nav__actions">
+      <button class="nav__bag" id="bagBtn" data-cursor="link" aria-label="Your ritual bag">
+        Bag <span id="bagCount">0</span>
+      </button>
+      <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- 1. HERO -->
+    <section class="hero" id="hero">
+      <div class="hero__bg" data-parallax="0.25">
+        <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=2000&q=80" alt="Luxury skincare bottles on a warm neutral surface" fetchpriority="high">
+      </div>
+      <div class="hero__veil"></div>
+
+      <!-- Floating decorative elements -->
+      <div class="float float--bottle float--1" aria-hidden="true"><i></i></div>
+      <div class="float float--bottle float--2" aria-hidden="true"><i></i></div>
+      <div class="float float--orb float--3" aria-hidden="true"></div>
+      <div class="float float--orb float--4" aria-hidden="true"></div>
+      <div class="float float--ring float--5" aria-hidden="true"></div>
+
+      <div class="hero__content">
+        <p class="eyebrow reveal-line"><span>ÉLORA SKIN · Paris — Manila</span></p>
+        <h1 class="hero__title" aria-label="Beauty Begins With Your Ritual.">
+          <span class="line"><span>Beauty Begins</span></span>
+          <span class="line"><span>With Your <em>Ritual.</em></span></span>
+        </h1>
+        <p class="hero__sub reveal-line"><span>Botanical science meets quiet luxury — skincare designed to be savoured, one gentle step at a time.</span></p>
+        <a href="#collection" class="btn btn--glow" data-cursor="button">
+          <span>Discover the Collection</span>
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+      <a href="#about" class="hero__scroll" data-cursor="link" aria-label="Scroll down"><span></span>Scroll</a>
+    </section>
+
+    <!-- Marquee -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Radiance</span><i>✦</i><span>Ritual</span><i>✦</i><span>Botanical</span><i>✦</i><span>Cruelty-Free</span><i>✦</i><span>Dermatologist Tested</span><i>✦</i><span>Radiance</span><i>✦</i><span>Ritual</span><i>✦</i><span>Botanical</span><i>✦</i><span>Cruelty-Free</span><i>✦</i><span>Dermatologist Tested</span><i>✦</i>
+        <span>Radiance</span><i>✦</i><span>Ritual</span><i>✦</i><span>Botanical</span><i>✦</i><span>Cruelty-Free</span><i>✦</i><span>Dermatologist Tested</span><i>✦</i><span>Radiance</span><i>✦</i><span>Ritual</span><i>✦</i><span>Botanical</span><i>✦</i><span>Cruelty-Free</span><i>✦</i><span>Dermatologist Tested</span><i>✦</i>
+      </div>
+    </div>
+
+    <!-- 2. BRAND INTRODUCTION -->
+    <section class="about section" id="about">
+      <div class="about__media reveal slide-right">
+        <div class="about__img about__img--main" data-parallax="0.08">
+          <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=1000&q=80" alt="Hands holding a skincare dropper bottle" loading="lazy">
+        </div>
+        <div class="about__img about__img--small" data-parallax="-0.1">
+          <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=600&q=80" alt="Woman with glowing, hydrated skin" loading="lazy">
+        </div>
+        <div class="about__badge" aria-hidden="true"><b>12</b><span>years of<br>botanical research</span></div>
+      </div>
+      <div class="about__text">
+        <p class="eyebrow reveal">Our Philosophy</p>
+        <h2 class="title reveal">Skincare as a <em>quiet</em> daily luxury.</h2>
+        <p class="reveal">Born from a love of slow mornings and soft light, ÉLORA SKIN treats skincare as a ritual rather than a routine. Every formula is built on clinically proven actives, rare botanicals and textures that feel as beautiful as they perform.</p>
+        <p class="reveal">We believe radiant skin is not about perfection — it is about care, consistency and the small moments you give yourself.</p>
+        <ul class="about__stats reveal">
+          <li><b data-count="98">0</b><sup>%</sup><span>Natural-origin ingredients</span></li>
+          <li><b data-count="40">0</b><sup>k+</sup><span>Rituals shared worldwide</span></li>
+          <li><b data-count="100">0</b><sup>%</sup><span>Cruelty-free</span></li>
+        </ul>
+        <a href="#collection" class="btn btn--outline reveal" data-cursor="button"><span>Explore Products</span></a>
+      </div>
+    </section>
+
+    <!-- 3. PRODUCT COLLECTION -->
+    <section class="collection section" id="collection">
+      <div class="section__head">
+        <p class="eyebrow reveal">The Collection</p>
+        <h2 class="title reveal">Four essentials. <em>One</em> luminous ritual.</h2>
+      </div>
+      <div class="products">
+        <article class="card reveal" data-cursor="card" style="--d:0s">
+          <div class="card__img">
+            <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=800&q=80" alt="Hydrating Facial Cleanser" loading="lazy">
+            <span class="card__tag">Bestseller</span>
+          </div>
+          <div class="card__info">
+            <span class="card__num">01</span>
+            <h3>Hydrating Facial Cleanser</h3>
+            <p>A cloud-soft gel that lifts impurities and leaves skin supple.</p>
+            <div class="card__row"><strong>$28</strong><button class="add" data-name="Hydrating Facial Cleanser" data-cursor="button">Add to Bag</button></div>
+          </div>
+        </article>
+        <article class="card reveal" data-cursor="card" style="--d:.12s">
+          <div class="card__img">
+            <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=800&q=80" alt="Vitamin C Serum" loading="lazy">
+            <span class="card__tag">New</span>
+          </div>
+          <div class="card__info">
+            <span class="card__num">02</span>
+            <h3>Vitamin C Serum</h3>
+            <p>Stabilised 15% vitamin C for a brighter, more even complexion.</p>
+            <div class="card__row"><strong>$42</strong><button class="add" data-name="Vitamin C Serum" data-cursor="button">Add to Bag</button></div>
+          </div>
+        </article>
+        <article class="card reveal" data-cursor="card" style="--d:.24s">
+          <div class="card__img">
+            <img src="https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&fit=crop&w=800&q=80" alt="Daily Moisturizer" loading="lazy">
+          </div>
+          <div class="card__info">
+            <span class="card__num">03</span>
+            <h3>Daily Moisturizer</h3>
+            <p>Lightweight, all-day hydration with ceramides and squalane.</p>
+            <div class="card__row"><strong>$35</strong><button class="add" data-name="Daily Moisturizer" data-cursor="button">Add to Bag</button></div>
+          </div>
+        </article>
+        <article class="card reveal" data-cursor="card" style="--d:.36s">
+          <div class="card__img">
+            <img src="https://images.unsplash.com/photo-1571781926291-c477ebfd024b?auto=format&fit=crop&w=800&q=80" alt="Overnight Repair Cream" loading="lazy">
+            <span class="card__tag">Night</span>
+          </div>
+          <div class="card__info">
+            <span class="card__num">04</span>
+            <h3>Overnight Repair Cream</h3>
+            <p>A rich, restorative cream that renews skin while you sleep.</p>
+            <div class="card__row"><strong>$48</strong><button class="add" data-name="Overnight Repair Cream" data-cursor="button">Add to Bag</button></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 4. SKINCARE EXPERIENCE -->
+    <section class="ritual section" id="ritual">
+      <div class="section__head">
+        <p class="eyebrow reveal">The Ritual</p>
+        <h2 class="title reveal">Three steps to <em>glow.</em></h2>
+      </div>
+      <div class="ritual__wrap reveal">
+        <div class="ritual__tabs" role="tablist" aria-label="Skincare steps">
+          <button role="tab" class="is-active" aria-selected="true" data-step="0" data-cursor="button"><b>01</b> Cleanse</button>
+          <button role="tab" aria-selected="false" data-step="1" data-cursor="button"><b>02</b> Treat</button>
+          <button role="tab" aria-selected="false" data-step="2" data-cursor="button"><b>03</b> Hydrate</button>
+          <span class="ritual__bar"><i id="ritualBar"></i></span>
+        </div>
+        <div class="ritual__stage">
+          <div class="ritual__imgs">
+            <img class="is-active" src="https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=1000&q=80" alt="Cleansing step" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=1000&q=80" alt="Treating step with serum" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1571781926291-c477ebfd024b?auto=format&fit=crop&w=1000&q=80" alt="Hydrating step with cream" loading="lazy">
+          </div>
+          <div class="ritual__copy">
+            <span class="ritual__big" id="ritualNum">01</span>
+            <h3 id="ritualTitle">Cleanse</h3>
+            <p id="ritualText">Begin with a clean canvas. Massage a small amount of Hydrating Facial Cleanser onto damp skin in slow circles for sixty seconds, then rinse with lukewarm water.</p>
+            <p class="ritual__tip" id="ritualTip">Pairs with — Hydrating Facial Cleanser</p>
+            <div class="ritual__nav">
+              <button id="stepPrev" class="round" aria-label="Previous step" data-cursor="button">←</button>
+              <button id="stepNext" class="round" aria-label="Next step" data-cursor="button">→</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. TESTIMONIALS -->
+    <section class="reviews section" id="reviews">
+      <div class="section__head">
+        <p class="eyebrow reveal">Kind Words</p>
+        <h2 class="title reveal">Loved by those who <em>glow.</em></h2>
+      </div>
+      <div class="slider reveal" id="slider" aria-roledescription="carousel">
+        <div class="slider__viewport">
+          <div class="slider__track" id="sliderTrack">
+            <figure class="slide">
+              <div class="stars" aria-label="5 stars">★★★★★</div>
+              <blockquote>“My skin has never felt so calm and luminous. The Vitamin C Serum became the highlight of my morning ritual within a week.”</blockquote>
+              <figcaption><b>Isabelle Laurent</b><span>Paris, France</span></figcaption>
+            </figure>
+            <figure class="slide">
+              <div class="stars" aria-label="5 stars">★★★★★</div>
+              <blockquote>“Luxurious textures, beautiful packaging and real results. The Overnight Repair Cream makes me look forward to bedtime.”</blockquote>
+              <figcaption><b>Camille Reyes</b><span>Manila, Philippines</span></figcaption>
+            </figure>
+            <figure class="slide">
+              <div class="stars" aria-label="5 stars">★★★★★</div>
+              <blockquote>“Finally a brand that feels indulgent yet gentle. My sensitive skin loves the cleanser — soft, fresh and never tight.”</blockquote>
+              <figcaption><b>Sophia Marchetti</b><span>Milan, Italy</span></figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="slider__controls">
+          <button class="round" id="prev" aria-label="Previous review" data-cursor="button">←</button>
+          <div class="slider__dots" id="dots"></div>
+          <button class="round" id="next" aria-label="Next review" data-cursor="button">→</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. NEWSLETTER -->
+    <section class="newsletter section" id="newsletter">
+      <div class="newsletter__box reveal">
+        <div class="newsletter__glow" aria-hidden="true"></div>
+        <p class="eyebrow">The ÉLORA Journal</p>
+        <h2 class="title">Join the ritual. <em>Receive 10% off.</em></h2>
+        <p>Skincare notes, early access and seasonal rituals, delivered gently to your inbox.</p>
+        <form class="form" id="newsForm" novalidate>
+          <label for="email" class="sr">Email address</label>
+          <input type="email" id="email" name="email" placeholder="Your email address" autocomplete="email" required data-cursor="link">
+          <button type="submit" class="btn btn--gold" data-cursor="button"><span>Subscribe</span></button>
+        </form>
+        <p class="form__msg" id="formMsg" role="status" aria-live="polite"></p>
+      </div>
+    </section>
+  </main>
+
+  <!-- 7. FOOTER -->
+  <footer class="footer">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <a href="#hero" class="nav__logo" data-cursor="link">ÉLORA <em>skin</em></a>
+        <p>Luxury skincare rituals, crafted for radiant, lasting skin.</p>
+        <div class="social">
+          <a href="#" aria-label="Instagram" data-cursor="button"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor"/></svg></a>
+          <a href="#" aria-label="Facebook" data-cursor="button"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v3H7v4h3v6h4v-6h3l1-4h-4V8z"/></svg></a>
+          <a href="#" aria-label="Pinterest" data-cursor="button"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M11 8c3-1 5 1 4 4s-3 3-4 2M10.5 10l-2 9"/></svg></a>
+          <a href="#" aria-label="YouTube" data-cursor="button"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2.5" y="5.5" width="19" height="13" rx="4"/><path d="M10 9.5v5l4.5-2.5z" fill="currentColor"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#about" data-cursor="link">Our Story</a></li>
+          <li><a href="#collection" data-cursor="link">Collection</a></li>
+          <li><a href="#ritual" data-cursor="link">The Ritual</a></li>
+          <li><a href="#reviews" data-cursor="link">Reviews</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:hello@eloraskin.example" data-cursor="link">hello@eloraskin.example</a></li>
+          <li><a href="tel:+63000000000" data-cursor="link">+63 000 000 0000</a></li>
+          <li>12 Rue de la Beauté<br>Paris, France</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Hours</h4>
+        <ul>
+          <li>Mon – Fri · 9am – 6pm</li>
+          <li>Sat · 10am – 4pm</li>
+          <li>Sun · Closed</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© <span id="year">2026</span> ÉLORA SKIN. All rights reserved. A fictional brand for demonstration.</span>
+      <a href="#hero" data-cursor="link">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
